@@ -1,4 +1,13 @@
 ---
 ---
-<h1>Scraversary Hunt</h1>
-<p>First off all, happy 6 aniversary women. This will be a challenge for the two of us. You will need to pass al the challenges that I'm going to be giving you. And my challenge is to achive programing everything of this. And my bigest  challenge, is going to be writing everything in english, lets see how this is gona end.</p>
+<input type="checkbox" id="instructions" value="instructions" class="hidden">
+<section class="bg-[var(--light)] w-96 h-4/5 p-16 m-auto mt-8 rounded-3xl relative">
+    <h1>Scraversary Hunt</h1>
+    <p>First off all, happy 6 aniversary women. This will be a challenge for the two of us. You will need to pass al the challenges that I'm going to be giving you. And my challenge is to achive programing everything of this. And my bigest  challenge, is going to be writing everything in english, lets see how this is gona end.</p>
+    <label for="instructions" class="absolute bg-[var(--main)] top-4 right-4 w-8 h-8 flex justify-around items-center rounded-lg">X</label>
+</section>
+<style>
+    input:checked ~ section {
+        display: none;
+    }
+</style>

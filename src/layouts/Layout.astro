@@ -16,10 +16,15 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-[var(--bg)] p-8">
 		<slot />
 	</body>
 </html>
 <style>
-	
+	html {
+		--bg: rgb(70, 95, 63);
+		--main: rgb(119, 179, 119);
+		--light: whitesmoke;
+		--dark: rgb(32, 46, 32);
+	}
 </style>
